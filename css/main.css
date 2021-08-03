@@ -1,0 +1,57 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body, .intro {
+  height: 100%;
+  width: 100%;
+}
+
+body {
+  background-color: black;
+  background-image: url(../img/bg_canvas.png);
+}
+
+.intro {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.intro > .brand {
+  transform: rotate(90deg);
+  width: 350px;
+  height: auto;
+}
+
+.intro > .braganza {
+  position: absolute;
+  bottom: 50px;
+  left: 50px;
+}
+
+@media (min-width: 576px) {
+  .intro > .brand {
+    width: 600px;
+    height: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .intro > .brand {
+    transform: rotate(0deg);
+    width: 600px;
+    height: auto;
+  }
+}
+
+@media (min-width: 1200px) {
+  .intro > .brand {
+    transform: rotate(0deg);
+    width: 1000px;
+    height: auto;
+  }
+}
